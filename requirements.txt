@@ -1,5 +1,10 @@
+telegram.ext
 Updater
 Filters
+CommandHandler 
+MessageHandler
 requests
+Adafruit_IO
 Client 
 Data
+Feed
