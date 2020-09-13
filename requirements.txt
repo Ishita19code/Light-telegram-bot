@@ -4,5 +4,4 @@ requests
 Adafruit_IO
 Client 
 Data
-Feed
 os
