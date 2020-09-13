@@ -1,6 +1,4 @@
-telegram
-Updater
-Filters 
+python-telegram-bot==12.8
 requests
 Adafruit_IO
 Client 
