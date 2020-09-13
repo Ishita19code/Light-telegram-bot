@@ -4,4 +4,3 @@ requests
 Adafruit_IO
 Client 
 Data
-os
