@@ -49,7 +49,7 @@ def unknown(bot, update):
     bot.send_message(chat_id, text = 'Sorry, I do not understand your command. Try some other command.')
 
 def main():
-    u = Updater('TOKEN')
+    u = Updater(TOKEN)
     dp = u.dispatcher
     dp.add_handler(CommandHandler('start', start))
     dp.add_handler(CommandHandler('on',on))
