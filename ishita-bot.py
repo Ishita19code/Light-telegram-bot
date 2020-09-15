@@ -1,6 +1,5 @@
 from Adafruit_IO import (Client, Feed, Data)
 
-from telegram import Update
 from telegram.ext import(Updater, CommandHandler, MessageHandler, Filters)
 
 # importing operating system library
