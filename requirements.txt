@@ -1,5 +1,6 @@
 python-telegram-bot
 telegram
+Update
 Updater
 Filters
 requests
