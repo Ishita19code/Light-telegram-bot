@@ -1,3 +1,7 @@
+python-telegram-bot
+Updater
+Filters
+requests
 Adafruit_IO
-telegram
-telegram.ext
+Client 
+Data
