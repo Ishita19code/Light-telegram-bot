@@ -17,26 +17,21 @@ aio = Client(x,y)
 # Create a feed and give a name to your feed
 new = Feed(name='bot123') 
 
-def get_url():
-    contents = requests.get('https://random.dog/woof.json').json()
-    url = contents['url']
-    return url
-
 def start(bot, update):
     chat_id = update.message.chat_id
-    bot.send_message(chat_id, text = 'Hi I am Taffy Bot. I will help you further.\nSend /on to turn on light.\nSend /off to turn it off.\nSend /cancel to exit.\n')
+    bot.send_photo(chat_id, 
+                   photo=("https://img.freepik.com/free-vector/flat-light-bulbs-turned-turned-off-with-light-switches_44703-329.jpg?size=626&ext=jpg"),
+                   caption = 'Hi I am Taffy Bot. I will help you further.\nSend /on to turn on light.\nSend /off to turn it off.\nSend /cancel to exit.\n')
 
 def on(bot,update):
-    url = get_url()
     chat_id = update.message.chat_id
-    bot.send_photo(chat_id,photo=url,caption = 'Turning Lights On. A cute picture for u to see while we execute your command.')
+    bot.send_photo(chat_id, photo=("https://ak.picdn.net/shutterstock/videos/3560576/thumb/1.jpg"),caption = 'Turning Lights On.')
     value = Data(value=1)
-    value_send = aio.create_data('bot123',value) 
+    value_send = aio.create_data('bot123',value)
 
 def off(bot,update):
-    url = get_url()
     chat_id = update.message.chat_id
-    bot.send_photo(chat_id,photo=url,caption = 'Turning Lights off. A cute picture for u to see while we execute your command.')
+    bot.send_photo(chat_id,photo=("https://ak.picdn.net/shutterstock/videos/3560594/thumb/1.jpg"),caption = 'Turning Lights off.')
     value = Data(value=0)
     value_send = aio.create_data('bot123',value)
 
