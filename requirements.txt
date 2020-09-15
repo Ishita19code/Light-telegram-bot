@@ -1,7 +1,2 @@
+adafruit_IO
 python-telegram-bot
-Updater
-Filters
-requests==2.22.0
-Adafruit_IO
-Client 
-Data
