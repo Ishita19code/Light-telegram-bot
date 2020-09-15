@@ -1,9 +1,1 @@
-python-telegram-bot
-telegram
-Update
-Updater
-Filters
-requests
-Adafruit_IO
-Client 
-Data
+
